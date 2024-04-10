@@ -1,0 +1,974 @@
+html{
+    height: auto;
+    margin: 0;
+}
+
+body{
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background: linear-gradient(to bottom, #d7b5ff,#a7ffb2,#51dac1);
+    color: #000000;
+    min-width: 1900px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #FBDFDF;
+    padding: 11px 0 11px 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.Panel-items{
+    display: inline;
+    margin-right: 100px;
+}
+
+.Select-item{
+    color: black;
+    text-decoration: none;
+    font-size: 45px;
+}
+
+.Select-item:hover{
+    text-decoration: underline;
+}
+
+li:last-child{
+    margin-right: 150px;
+}
+
+.Logo{
+    margin-right: 47px;
+}
+
+.Icon{
+    margin-right: 40px;
+}
+
+.Icon:hover{
+    opacity: 50%;
+}
+
+.PC{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Phone-image{
+    display: none;
+}
+
+.Spec-propose{
+    text-align: center;
+    align-self: center;
+    padding: 0;
+}
+
+.Title{
+    font-size: 55px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 30px;
+}
+
+.Description-of-pc{
+    font-size: 30px;
+    padding: 0 250px;
+}
+
+.Background{
+    background: no-repeat center/100% url("../img/Stroke-propose.svg"); 
+}
+
+.Main-button{
+    background-color: #BDA1DB;
+    border: 4px #BDA1DB solid;
+    border-radius: 10px;
+    height: 80px;
+    width: 300px;
+    font-size: 45px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-left: 65px;
+    margin-right: 100px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+}
+
+.Main-button:hover{
+    background-color: #FBDFDF;
+}
+
+.Options{
+    text-align: center;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.First-option{
+    background: no-repeat url("../img/First-photo.svg");
+    width: 450px;
+    height: 270px;
+    margin-right: 50px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+
+.Second-option{
+    background: no-repeat url("../img/Second-photo.svg");
+    width: 450px;
+    height: 270px;
+    margin-right: 50px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+
+.Third-option{
+    background: no-repeat url("../img/Third-photo.svg");
+    width: 450px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+
+.Option-button{
+    background-color: #CFCEEA;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    height: 62px;
+    width: 300px;
+    border: none;
+    margin-top: 180px;
+}
+
+.Option-button:hover{
+    font-weight: 700;
+}
+
+.Info-about{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -175px;
+}
+
+.About-text{
+    font-size: 70px;
+    font-weight: 300;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.Stroke-img{
+    z-index: -1;
+}
+
+.Stroke-img-phone{
+    display: none;
+}
+
+.About-us{
+    background: no-repeat center url("../img/Stroke-aboutUs.svg");
+    width: 450px;
+}
+
+.Description-about{
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+.Services{
+    background-color: rgba(207, 206, 234, 0.8);
+    margin: 0;
+}
+
+.Services-item{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.Services-options{
+    display: flex;
+    padding: 0 100px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+.Services-text{
+    margin: 0;
+}
+
+.Item{
+    text-align: center;
+    font-size: 20px;
+    width: auto;
+}
+
+.Icon-serv{
+    height: 150px;
+    width: 170px;
+}
+
+.Catalog{
+    font-weight: 300;
+    font-size: 65px;
+    padding-bottom: 20px;
+    width: 380px;
+    text-align: center;
+    background: no-repeat  url(../img/Stroke-catalog.png);
+}
+
+.Catalog-goods{
+    width: 500px;
+    height: 825px;
+    background-color: #CFCEEA;
+    box-shadow: 8px 8px 4px rgba(206, 76, 218, 0.7);
+    cursor: pointer;
+}
+
+.Catalog-goods:hover{
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 30px;
+    margin: 0;
+    justify-content: center;
+}
+
+.Grid-text{
+    text-align: center;
+}
+
+.Img-catalog>img{
+    width: 500px;
+}
+
+.Catalog-name{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.Catalog-price{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Catalog-button{
+    height: 80px;
+    width: 400px;
+    font-size: 40px;
+    background-color: #BDA1DB;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.Catalog-button:hover{
+    font-weight: 600;
+}
+
+.Pages{
+    margin-top: 32px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Arrows{
+    cursor: pointer;
+}
+
+.Arrows:hover{
+    opacity: 50%;
+}
+
+.Review{
+    background: url("../img/Phont.svg");
+}
+
+.Title-review{
+    background: no-repeat center 45% url("../img/Stroke-review.svg");
+    width: 430px;
+    height: 110px;
+    font-weight: 300;
+    font-size: 65px;
+    padding-left: 190px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.Reviews-example-first{
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 0;
+}
+
+.Reviews-example-second{
+    display: flex;
+    margin-left: 450px;
+}
+
+.Photo-of-review{
+    width: 180px;
+    height: 180px;
+}
+
+.Review-description{
+    font-size: 30px;
+    width: 1000px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.Review-date{
+    font-size: 20px;
+    margin-left: 50px;
+    color: #FBDFDF;
+}
+
+.Pages-review{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Arrows-review{
+    cursor: pointer;
+}
+
+.Arrows-review:hover{
+    opacity: 50%;
+}
+
+.Title-add-review{
+    background: no-repeat center 0% url("../img/Stroke-add-review.svg");
+    width: 570px;
+    height: 110px;
+    font-weight: 300;
+    font-size: 65px;
+    padding-left: 150px;
+    padding-top: 0px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.Add-review{
+    margin-top: 0;
+    padding: 0 200px;
+}
+
+.Name-input{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 56px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D9D9D9;
+    padding-left: 24px;
+}
+
+.Coment-text{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 200px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D9D9D9;
+    padding-left: 24px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.Add-review-button{
+    background-color: #FBDFDF;
+    border: 4px #BDA1DB solid;
+    border-radius: 10px;
+    height: 80px;
+    width: 350px;
+    font-size: 45px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 601.5px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+}
+
+.Add-review-button:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.90);
+}
+
+.Delivery-phone{
+    display: none;
+}
+.Delivery-title{
+    font-size:  55px;
+    font-weight: 300;
+    width: 500px;
+    height: 80px;
+    margin-top: 44px;
+    margin-left: 122px;
+    padding-left: 40px;
+    background:no-repeat center 100% url("../img/Delivery_title_stroke.svg");
+}
+
+.Delivery{
+    background:no-repeat url("/img/Background_delivery.svg");
+    height: 850px;
+}
+
+.Delivery-steps-first{
+    text-align: center;
+    display: flex;
+    margin-bottom: -130px;
+}
+
+.Delivery-steps-second{
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Step-radius{
+    background: white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 4px rgba(255, 0, 0, 0.25);
+}
+
+.Step-number{
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.Step-descr{
+    font-size: 40px;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.Step-first{
+    margin-left: 150px;
+}
+
+.Step-second{
+    margin-left: 550px;
+}
+
+.Step-third{
+    margin-left: 250px;
+}
+
+.Step-fourth{
+    margin-left: 250px;
+}
+
+.Footer{
+    display: flex;
+    background-color: #CFCEEA;
+}
+
+.Phone-footer-logo{
+    display: none;
+}
+.Footer-contacts{
+    width: 420px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.Contacts{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 90px;
+    background:no-repeat center url("/img/Stroke-contacts.svg");
+    width: 245px;
+}
+
+.Contacts-list{
+    list-style-type: none;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+.Contacts-options{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.Footer-info{
+    height: auto;
+    padding-top: 20px;
+}
+
+.Info{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 40px;
+    background:no-repeat center url("/img/Stroke-info.svg");
+    width: 200px;
+}
+.Info-list{
+    list-style-type: none;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.Info-options{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.Footer-logo{
+    width: 400px;
+}
+
+.Footer-info-options{
+    display: flex;
+}
+
+.Footer-logotype{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+}
+
+.Footer-icons{
+    display: flex;
+    justify-content:space-between;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.Footer-img{
+    width: 95px;
+    height: 95px;
+}
+
+.Footer-input{
+    margin: auto;
+}
+
+.Description-footer{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    width: 600px;
+    margin-top: 0;
+}
+
+.Email-input{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 56px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 24px;
+}
+
+.Footer-button{
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: #BDA1DB;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 0 200px;
+}
+
+.Footer-button:hover{
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+}
+
+@media (max-width: 767px){
+    body{
+        min-width: 766px;
+    }
+
+    nav{
+        display: flex;
+    }
+
+    .Spec-propose{
+        max-width: 767px;
+    }
+
+    .Logo{
+        margin-right: 170px;
+    }
+
+    .Options-header{
+        display: none;
+    }
+
+    .PC{
+        display: flex;
+        align-items: flex-end ;
+    }
+
+    .Phone-image{
+        display: block;
+        max-width: 767px;
+    }
+
+    .Phone-photo-pc{
+        margin-top: -68px;
+        width: 600px;
+    }
+
+    .Pc-svg{
+        display: none;
+    }
+
+    .Title{
+        font-size: 35px;
+    }
+
+    .Description-of-pc{
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    .Spec-propose-button{
+        display: flex;
+    }
+
+    .Main-button{
+        margin-top: 10px;
+        margin: 0 41.75px;
+        border-radius: 20px;
+    }
+    
+    .Options{
+        display: block;
+        margin: auto;
+    }
+
+    .First-option{
+        background: no-repeat  url("../img/First-photo-phone.svg");
+        background-size: 100%;
+        margin: auto;
+        margin-top: 30px;
+        width: 650px;
+        height: 258px;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+    }
+
+    .Second-option{
+        background: no-repeat  url("../img/Second-photo-phone.svg");
+        background-size: 100%;
+        margin: auto;
+        width: 650px;
+        height: 258px;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+    }
+
+    .Third-option{
+        background: no-repeat  url("../img/Third-photo-phone.svg");
+        background-size: 100%;
+        margin: auto;
+        width: 650px;
+        height: 258px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+    }
+
+    .Info-about{
+        flex-direction: column;
+        margin-bottom: -175px;
+    }
+
+    .Description-about{
+        font-size: 30px;
+        margin: 0 30px;
+    }
+
+    .Stroke-img{
+        display: none;
+    }
+
+    .Stroke-img-phone{
+        display: block;
+        margin: auto;
+        z-index: -1;
+        width: 500px;
+    }
+
+    .Services-options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0;
+    }
+
+    .Grid{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 30px;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .Grid-text{
+        height: 161.25px;
+    }
+
+    .Catalog-name{
+        font-size: 25px;
+    }
+
+    .Catalog-price{
+        font-size: 25px;
+        margin: 20px 0 15px;
+    }
+
+    .Catalog-button{
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        vertical-align: bottom;
+    }
+
+    .Img-catalog>img{
+        width: 300px;
+    }
+
+    .Catalog-goods{
+        width: 300px;
+        height: 500px;
+    }
+
+    .Pages{
+        margin-bottom: 40px;
+    }
+
+    .Review{
+        background: #BDA1DB; 
+    }
+
+    .Title-review{
+        padding-left: 90px;
+        width: 320px;
+        margin-top: 0;
+    }
+
+    .Title-add-review{
+        padding-left: 50px;
+        width: 480px;
+    }
+
+    .Reviews-example-first{
+        display: block;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+
+    .Photo-review-phone{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Review-description{
+        padding: 0 30px;
+        width: auto;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    .Reviews-example-second{
+        display: block;
+        margin-left: 0px;
+    }
+
+    .Review-date{
+        text-align: right;
+        margin: 0;
+        padding-right: 30px;
+    }
+
+    .Add-review{
+        padding-left: 30px;
+        padding-right: 70px;
+    }
+
+    .Button-review{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Add-review-button{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .Delivery-title{
+        padding-left: 60px;
+        padding-top: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+
+    .Delivery{
+        display: none;
+    }
+
+    .Delivery-phone{
+        display: block;
+        background:no-repeat center url("/img/Background-stroke-delivery.svg");
+        background-size: cover;
+        height: 760px;
+    }
+
+    .Step-radius{
+        width: 120px;
+        height: 120px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .Step-number{
+        font-size: 80px;
+        font-weight: 700;
+    }
+
+    .Step-descr{
+        margin-top: 0;
+        font-size: 30px;
+        margin-bottom: 0;
+        width: 300px;
+    }
+
+    .Delivery-steps-first{
+        flex-direction: column;
+    }
+
+    .Step-first{
+        padding-left: 50px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .Step-second{
+        padding-left: 230px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .Step-third{
+        padding-left: 50px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .Step-fourth{
+        padding-left: 230px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .Footer-input{
+        display: none;
+    }
+
+    .Contacts{
+        font-size: 20px;
+    }
+
+    .Contacts-options{
+        font-size: 20px;
+    }
+
+    .Info{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .Info-options{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .Footer-logo{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .Footer{
+        display: block;
+    }
+
+    .Phone-footer-logo{
+        display: block;
+    }
+
+    .Phone-footer-logo>a>img{
+        width: 250px;
+        height: 70px;
+        padding-left: 30px;
+    }
+
+    .Footer-logotype{
+        display: none;
+    }
+
+    .Footer-img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .Footer-icons{
+        display: start;
+        margin: 0;
+        float: right;
+        width: 265px;
+        padding-right: 20px;
+    }
+}
